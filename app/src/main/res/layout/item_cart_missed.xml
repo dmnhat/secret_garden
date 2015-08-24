@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_cart_bet_img_width"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/item_cart_bet_img_width"
+        android:layout_height="@dimen/item_cart_bet_img_width"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/item_chat_content_marginLeft"
+        android:layout_marginRight="@dimen/item_chat_content_marginTop"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_new" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/item_chat_text_margin"
+                android:layout_marginRight="@dimen/item_chat_text_margin"
+                android:layout_toRightOf="@+id/iv_status"
+                android:text="$100"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textSize_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/item_chat_text_margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 minutes ago"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textSize_tiny" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/item_cart_bet_text_margin2"
+                    android:text="288/360"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/default_textSize_tiny" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_cart_bet_text_margin1"
+            android:layout_marginTop="@dimen/item_cart_bet_text_margin1" >
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/item_chat_avatar_width"
+                android:layout_height="@dimen/item_chat_avatar_width"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/item_chat_text_margin"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Username666"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textSize_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/rl_container_win" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_cart_bet_number_marginLeft"
+                    android:background="@drawable/bg_number2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_cart_bet_number_paddingLeft"
+                    android:paddingRight="@dimen/item_cart_bet_number_paddingRight"
+                    android:singleLine="true"
+                    android:text="78, 116, 212, 231, 288"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textSize_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_circle"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textSize_normal"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_container_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_cart_bet_number_marginLeft"
+                    android:background="@drawable/bg_number2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/item_cart_bet_number_paddingLeft"
+                    android:paddingRight="@dimen/item_cart_bet_number_paddingRight"
+                    android:singleLine="true"
+                    android:text="78"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textSize_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_circle"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_win2" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

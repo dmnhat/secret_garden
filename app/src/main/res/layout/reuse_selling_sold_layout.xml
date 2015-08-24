@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_reuse_selling_sold_layout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_cart_bar_height"
+        android:layout_marginBottom="@dimen/fragment_cart_bar_marginTop"
+        android:layout_marginLeft="@dimen/fragment_cart_bar_marginLeft"
+        android:layout_marginRight="@dimen/fragment_cart_bar_marginLeft"
+        android:layout_marginTop="@dimen/fragment_cart_bar_marginTop"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tv_selling"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_tab_left"
+            android:gravity="center"
+            android:text="@string/selling"
+            android:textColor="@drawable/selector_text_tab"
+            android:textSize="@dimen/default_textSize_normal" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/green_light2" />
+
+        <TextView
+            android:id="@+id/tv_sold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_tab_right"
+            android:gravity="center"
+            android:text="@string/sold"
+            android:textColor="@drawable/selector_text_tab"
+            android:textSize="@dimen/default_textSize_normal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

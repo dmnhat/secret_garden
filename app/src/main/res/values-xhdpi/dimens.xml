@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- layout_left_menu -->
+    <dimen name="layout_left_menu_width">300dp</dimen>
+
+</resources>

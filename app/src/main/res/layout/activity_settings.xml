@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/reuse_toolbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_below="@id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_small"
+        card_view:cardCornerRadius="2dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <TextView
+            style="@style/Default_TextView_Profile"
+            android:textStyle="bold"
+            android:text="@string/more_information" />
+            <TextView
+                style="@style/Default_Button_Profile_Padding_Large"
+                android:text="@string/legal_agreements"
+                android:clickable="true"
+                android:onClick="onSettingClick"
+                android:id="@+id/tv_setting_legal"
+                android:background="@drawable/ripple_toolbar_bkg_white_float_gray"
+               />
+            <TextView
+                android:id="@+id/tv_setting_term"
+                style="@style/Default_Button_Profile_Padding_Large"
+                android:text="@string/term_conditions"
+                android:clickable="true"
+                android:onClick="onSettingClick"
+                android:background="@drawable/ripple_toolbar_bkg_white_float_gray"/>
+            <TextView
+                android:id="@+id/tv_setting_faq"
+                style="@style/Default_Button_Profile_Padding_Large"
+                android:text="@string/faq"
+                android:clickable="true"
+                android:onClick="onSettingClick"
+                android:background="@drawable/ripple_toolbar_bkg_white_float_gray"/>
+            <TextView
+                android:id="@+id/tv_setting_about_the_app"
+                style="@style/Default_Button_Profile_Padding_Large"
+                android:text="@string/about_the_app"
+                android:clickable="true"
+                android:onClick="onSettingClick"
+                android:background="@drawable/ripple_toolbar_bkg_white_float_gray"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

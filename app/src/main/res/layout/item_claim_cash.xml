@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_claim_cash_credit_owned"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textSize_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1240"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textSize_normal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/item_claim_cash_instruction"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textSize_normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_start_btn_height"
+        android:layout_marginTop="5dp"
+        android:background="#00b8d3"
+        android:text="@string/item_claim_cash_claim_now"
+        android:textColor="@color/white" />
+
+</LinearLayout>

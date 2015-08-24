@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeNoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ThemeActionBar" parent="@android:style/Theme.Holo.Light">
+<!--         <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item> -->
+<!--         <item name="android:actionBarStyle">@style/AppActionBar</item> -->
+<!--         <item name="android:actionOverflowButtonStyle">@style/AppActionBarOverFlow</item> -->
+<!--         <item name="android:popupMenuStyle">@style/AppPopupMenu</item> -->
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="AppActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+<!--         <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item> -->
+<!--         <item name="android:background">@color/blue</item> -->
+<!--         <item name="android:titleTextStyle">@style/AppActionBarTitleTextStyle</item> -->
+<!--         <item name="android:icon">@android:color/transparent</item> -->
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="AppActionBarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+<!--         <item name="android:textColor">@color/white</item> -->
+<!--         <item name="android:textSize">@dimen/default_large_textSize</item> -->
+<!--         <item name="android:textStyle">bold</item> -->
+    </style>
+
+    <style name="AppActionBarOverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+<!--         <item name="android:src">@drawable/ic_action_overflow</item> -->
+    </style>
+
+    <style name="AppPopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_reuse_profile_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/default_margin_normal"
+    android:paddingRight="@dimen/default_margin_normal">
+
+    <com.nng.onedollar.views.RoundedImageView
+        android:id="@+id/imv_profile_image"
+        style="@style/Default_CircleView_Avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/default_margin_tiny"
+        android:layout_marginRight="@dimen/default_margin_tiny"
+        android:layout_marginTop="@dimen/default_margin_tiny"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_profile_image"
+        android:layout_toRightOf="@id/imv_profile_image"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/default_margin_normal"
+        android:paddingTop="@dimen/default_margin_tiny">
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Luke Skywallker"
+            android:textSize="@dimen/default_textSize_huge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_profile_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Dagobah, Singapore"
+            android:textSize="@dimen/default_textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_profile_date_join"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|left"
+            android:lines="2"
+            android:text="@string/joined_on"
+            android:textSize="@dimen/default_textSize_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin_tiny"
+                android:singleLine="true"
+                android:text="Verified"
+                android:textSize="@dimen/default_textSize_normal" />
+
+            <ImageView
+                android:id="@+id/imv_profile_verified_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin_tiny"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_facebook_disable" />
+
+            <ImageView
+                android:id="@+id/imv_profile_verified_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_email_disable" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

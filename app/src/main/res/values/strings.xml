@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">One Dollar</string>
+
+    <string name="currency">$</string>
+
+    <!-- live fb id 645878168880874 -->
+    <!-- test fb id 870550426362745 -->
+    <string name="facebook_app_id">645878168880874</string>
+    <string name="api_domain">http://onedollar.projects.nng.bz/api</string>
+    <string name="api_version"></string>
+    <string name="sell_item">Sell Item</string>
+
+    <string name="more_information">More Information</string>
+    <string name="legal_agreements">Legal agreements</string>
+    <string name="term_conditions">Term &amp; Conditions</string>
+    <string name="faq">FAQ</string>
+    <string name="about_the_app">About the app</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="activity_sign_up_detail_city">City</string>
+    <string name="photo">Photo</string>
+    <string name="change_password">Change Password</string>
+    <string name="private_profile">Private Profile</string>
+    <string name="activity_sign_up_detail_email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="gender">Gender</string>
+    <string name="settings">Settings</string>
+
+    <array name="arr_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <string name="resend_verification_email">Resend verification email</string>
+    <string name="birthday">Birthday</string>
+    <string name="tap_to_change">Tap to change \n (optional)</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+
+    <!-- dialog - message -->
+    <string name="dialog_title_error">Error</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="dialog_btn_close">Close</string>
+
+    <string name="msg_err_unknown">Unknown error</string>
+    <string name="msg_err_no_internet">No Internet connection. Please check Internet connection and try again.</string>
+    <string name="msg_err_time_out">Connection time out. Please try again.</string>
+
+    <string name="msg_err_not_enough_info">Please fill in all required fields.</string>
+    <string name="msg_err_password_not_matched">Password does not match the confirm password.</string>
+    <string name="msg_err_sign_up_fail">Unable to sign up.</string>
+    <string name="msg_err_sign_in_fail">Unable to sign in.</string>
+    <string name="msg_err_get_countries_fail">Unable to get contries.</string>
+    <string name="msg_err_forgot_password_fail">Unable to send email to reset password.</string>
+    <string name="msg_err_load_product_fail">Unable to load product list.</string>
+
+    <string name="msg_invalid_email">Invalid email format.</string>
+
+    <string name="msg_forgot_password_success">Please check your email to reset password.</string>
+
+    <!-- activity_start -->
+    <string name="activity_start_text1">EVERYTHING IS $1</string>
+    <string name="activity_start_text2">Get a chance to win cool stuff only with a dollar</string>
+    <string name="activity_start_text3">by signing up, you agree with our terms &amp; service</string>
+    <string name="activity_start_facebook">Sign up or Log in with Facebook</string>
+    <string name="activity_start_email">Sign up or Log in with Email</string>
+
+    <!-- activity_sign_up -->
+    <string name="activity_sign_up_email">write your email here&#8230;</string>
+    <string name="activity_sign_up_password">password&#8230;</string>
+    <string name="activity_sign_up_confirm_password">confirm password&#8230;</string>
+    <string name="activity_sign_up_sign_up">SIGN UP</string>
+    <string name="activity_sign_up_sign_in">or Login here</string>
+
+    <!-- actitivity_sign_in -->
+    <string name="activity_sign_in_sign_in">LOGIN</string>
+    <string name="activity_sign_in_sign_up">or Sign Up here</string>
+    <string name="activity_sign_in_forgot_password">Forgot Password?</string>
+
+    <!-- activity_forgot_password -->
+    <string name="activity_forgot_password_title">Please enter your email address of your account</string>
+    <string name="activity_forgot_password_send">SEND PASSWORD</string>
+
+    <!-- activity_sign_up_detail -->
+    <string name="activity_sign_up_detail_title">Sign Up</string>
+    <string name="activity_sign_up_detail_text1">Almost there</string>
+    <string name="activity_sign_up_detail_text2">Please set a username, it will be your identity\nin the app, be creative :) and tell us your city\n to show items near you!</string>
+    <string name="activity_sign_up_detail_username">Username</string>
+    <string name="activity_sign_up_detail_username_hint">Create a Username</string>
+
+    <string name="activity_sign_up_detail_email_hint">youremail@here.com</string>
+
+    <string name="activity_sign_up_detail_city_hint">Choose a city</string>
+
+    <!-- activity_choose_city -->
+    <string name="activity_choose_city_title">Country</string>
+    <string name="activity_choose_city_search_hint">Search here&#8230;</string>
+
+    <!-- activity_home -->
+    <string name="activity_home_claim_cash">Claim Cash</string>
+    <string name="activity_home_get_extra_credit">Get Extra Credit</string>
+    <string name="activity_home_help">Help</string>
+    <string name="activity_home_sign_out">Sign Out</string>
+
+    <!-- fragment_home -->
+
+
+    <!-- fragment_cart -->
+    <string name="fragment_cart_title">Activity Cart</string>
+    <string name="fragment_cart_bet">BET</string>
+    <string name="fragment_cart_won">WON</string>
+    <string name="fragment_cart_missed">MISSED</string>
+
+    <!-- fragment_inbox -->
+    <string name="fragment_inbox_title">Chat</string>
+    <string name="fragment_inbox_sold">SOLD</string>
+    <string name="fragment_inbox_won">WON</string>
+
+    <!-- fragment_notification -->
+    <string name="fragment_notification_title">Notification</string>
+
+    <!-- fragment_chat -->
+    <string name="fragment_chat_text1">You have 30 days to send your products.\nChat with the owner to finish the deal\nand get your cash in your section\n"Claim cash section"</string>
+    <string name="fragment_chat_text2">You have 30 days to claim your products.\nChat with the owner to finish the deal\nor you will lose your prize.</string>
+
+    <!-- activity_claim_cash -->
+    <string name="activity_claim_cash_title">Claim Cash</string>
+
+    <!-- item_claim_cash -->
+    <string name="item_claim_cash_credit_owned">Credit owned&#58;</string>
+    <string name="item_claim_cash_instruction">You need a valid Paypal account to receive your cash</string>
+    <string name="item_claim_cash_claim_now">Claim Now</string>
+    <string name="item_claim_cash_claim_within">Claim Within 60 Days</string>
+    <string name="claim_my_one_dollar">Claim my $1</string>
+    <string name="intro_one_dollar">is a lotery, you can buy $1 ticket.\n Let\'s give a try here is $1\n to try and maybe win a great prize,\n use it wisely.</string>
+    <string name="joined_on">Joined on %s</string>
+    <string name="item_listings">Item Listings %d</string>
+    <string name="selling">Selling</string>
+    <string name="sold">Sold</string>
+    <string name="product_title">Product Tittle</string>
+    <string name="select_category">Selct Category</string>
+    <string name="describle_about_what_you_sell">Describle more what are you selling...\n ( E.g. Condition, color, Size, etc )</string>
+    <string name="number_of_days">Number of days</string>
+    <string name="leverage">Leverage</string>
+    <string name="dollar_singapore">SGD</string>
+    <string name="set_price">Set Price</string>
+    <string name="location">Location</string>
+    <string name="new_used">NEW / USED</string>
+    <string name="updating">Updating...</string>
+    <string name="plaese_wait">Please Wait</string>
+    <!-- camera -->
+    <array name="camera1">
+        <item>Choose from gallery</item>
+        <item>Capture from camera</item>
+    </array>
+    <array name="camera2">
+        <item>Choose from gallery</item>
+        <item>Capture from camera</item>
+        <item>Delete</item>
+    </array>
+
+</resources>

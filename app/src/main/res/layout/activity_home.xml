@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_sign_up_detail_header_height"
+        android:background="@color/green"
+        android:paddingLeft="@dimen/activity_sign_up_detail_header_paddingLeft"
+        android:paddingRight="@dimen/activity_sign_up_detail_header_paddingLeft" >
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/default_margin_normal"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="@dimen/activity_home_header_tv_width"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_bg_green_light"
+            android:gravity="center"
+            android:layout_margin="@dimen/default_margin_normal"
+            android:singleLine="true"
+            android:text="$1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textSize_huge"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_sign_up_detail_header_height"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/default_margin_normal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_search_white" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_choose_city_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textSize_huge"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light" >
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_bottom_bar"
+                android:background="#ebebeb" />
+
+            <include
+                android:id="@+id/layout_bottom_bar"
+                layout="@layout/layout_bottom_bar" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_left_menu" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

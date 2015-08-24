@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_base">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#363636</color>
+    <color name="gray">#ababab</color>
+    <color name="gray_light">#ebebeb</color>
+    <color name="green">#39b54a</color>
+    <color name="green_light1">#8dc53e</color>
+    <color name="green_light2">#acd373</color>
+    <color name="ripple_color">@android:color/darker_gray</color>
+    <color name="icon_like">#75ac38</color>
+    <color name="icon_dislike">#f93c3c</color>
+    <color name="icon_cup">#ae1d39</color>
+    <color name="blue_soft">#FF2970AE</color>
+</resources>

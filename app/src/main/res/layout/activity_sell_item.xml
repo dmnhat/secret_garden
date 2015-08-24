@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/reuse_toolbar_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_toolbar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listImageUpload"
+                android:layout_width="fill_parent"
+                android:padding="@dimen/default_margin_small"
+                android:layout_height="@dimen/default_image_upload" />
+
+            <Button
+                android:id="@+id/btn_chooseCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/ic_drop_down_black"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/default_textSize_large"
+                android:text="@string/select_category" />
+
+            <EditText
+                android:id="@+id/edt_productTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:background="@color/white"
+                android:hint="@string/product_title"
+                android:padding="@dimen/default_textSize_large"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/edt_productDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="@string/describle_about_what_you_sell"
+                android:lines="5"
+                android:maxLines="5"
+                android:padding="@dimen/default_textSize_large"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_numberOfDays"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/default_textSize_large"
+                    android:text="@string/number_of_days" />
+
+                <Button
+                    android:id="@+id/btn_numberOfDays"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_margin_line"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableRight="@mipmap/ic_drop_down_black"
+                    android:padding="@dimen/default_textSize_large"
+                    android:text="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_leverage"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/default_textSize_large"
+                    android:text="@string/leverage" />
+
+                <Button
+                    android:id="@+id/btn_leverage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_margin_line"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableRight="@mipmap/ic_drop_down_black"
+                    android:padding="@dimen/default_textSize_large"
+                    android:text="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_statusItem"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/default_textSize_large"
+                    android:text="@string/new_used" />
+
+                <Switch
+                    android:id="@+id/sw_statusItem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/default_margin_line"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/default_textSize_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_setPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/edt_priceItem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:hint="@string/set_price"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/default_textSize_large"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_margin_line"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/default_textSize_large"
+                    android:singleLine="true"
+                    android:text="@string/dollar_singapore" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_height_button_normal"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="@dimen/default_margin_line"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/ic_location_gray"
+                android:drawablePadding="@dimen/default_margin_medium"
+                android:gravity="center|left"
+                android:padding="@dimen/default_textSize_large"
+                android:text="@string/location"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

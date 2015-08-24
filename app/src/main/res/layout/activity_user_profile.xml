@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        android:layout_alignParentTop="true"
+        layout="@layout/reuse_toolbar_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layout_profile_info"
+        layout="@layout/reuse_profile_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_toolbar" />
+
+    <ImageView
+        android:id="@+id/imv_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_profile_info"
+        android:layout_marginLeft="@dimen/default_margin_medium"
+        android:layout_marginRight="@dimen/default_margin_medium"
+        android:layout_marginTop="@dimen/default_margin_tiny"
+        android:src="@android:color/darker_gray" />
+
+    <include
+        android:id="@+id/layout_profile_status_social"
+        layout="@layout/reuse_profile_status_social"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_divider"
+        android:layout_marginTop="@dimen/default_margin_small" />
+
+    <TextView
+        android:id="@+id/tv_profile_item_listings"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_height_button_normal"
+        android:layout_below="@id/layout_profile_status_social"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/item_listings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textSize_large"
+        android:textStyle="bold" />
+    <include
+        layout="@layout/reuse_selling_sold_layout"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/tv_profile_item_listings"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

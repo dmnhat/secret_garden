@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:alpha="0.85"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/default_margin_small"
+        android:onClick="backToHomeScreen"
+        android:src="@drawable/ic_close"/>
+
+    <TextView
+        android:id="@+id/text_clarm_one_dollar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/claim_my_one_dollar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/default_textSize_large"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/default_margin_small"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_clarm_one_dollar"
+        layout="@layout/button_one_dollar"
+        android:id="@+id/icon_one_dollar"
+        android:layout_marginLeft="@dimen/default_margin_small"
+        android:layout_marginRight="@dimen/default_margin_small"
+        />
+    <TextView
+        android:id="@+id/text_one_dollar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OneDollar"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/icon_one_dollar"
+        android:gravity="center"
+        android:textSize="@dimen/default_textSize_huge"
+        android:textColor="@android:color/white"
+        android:paddingTop="@dimen/default_margin_large"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_one_dollar"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/text_one_dollar"
+        android:gravity="center"
+        android:textSize="@dimen/default_textSize_large"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
